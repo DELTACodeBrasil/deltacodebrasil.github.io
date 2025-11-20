@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>Δ.DΣLTA CODE BRASIL</title>
+    <!-- Meta Tags para SEO -->
+    <meta content='Δ.DΣLTA CODE BRASIL - Desenvolvimento de sites sob medida. Soluções digitais para o seu negócio. Criação de sites profissionais e personalizados.' name='description'/>
+    <meta content='desenvolvimento de sites, criar site, site profissional, delta code brasil, programação, tecnologia' name='keywords'/>
+    <meta content='Δ.DΣLTA CODE BRASIL' name='author'/>
+    <style>
+        /* Estilo Hacker */
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #0F0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #0F0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #0F0;
+            text-shadow: 0 0 10px #0F0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #0F0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1em;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        nav a:hover {
+            text-shadow: 0 0 10px #0F0;
+        }
+        .main {
+            margin: 20px 0;
+        }
+        .page-content {
+            padding: 15px;
+            border: 1px solid #0F0;
+            background-color: #111;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #0F0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 10px 0;
+            color: #0F0;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .dev-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .dev-card {
+            background-color: #222;
+            padding: 15px;
+            border: 1px solid #0F0;
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+        }
+        .dev-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .dev-card h3 {
+            margin: 0;
+            color: #0F0;
+            font-size: 1.2em;
+        }
+        .dev-card p {
+            margin: 5px 0;
+            color: #0F0;
+            font-size: 0.9em;
+        }
+        /* Efeito de digitação no título */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .typing-effect {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end);
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            float: right;
+            padding: 15px;
+            background-color: #111;
+            border: 1px solid #0F0;
+            margin-left: 20px;
+        }
+        .sidebar h3 {
+            color: #0F0;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #0F0;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            text-shadow: 0 0 10px #0F0;
+        }
+        /* Social Links */
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #0F0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1em;
+        }
+        .social-links a:hover {
+            text-shadow: 0 0 10px #0F0;
+        }
+        /* Formulário */
+        input, textarea, button {
+            background-color: #111;
+            border: 1px solid #0F0;
+            color: #0F0;
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        button {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: #0F0;
+            color: #000;
+        }
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                font-size: 0.9em;
+                margin: 0 5px;
+            }
+            .page-content {
+                padding: 10px;
+            }
+            .dev-card {
+                width: 100%;
+                max-width: 150px;
+                padding: 10px;
+            }
+            .dev-card img {
+                width: 60px;
+                height: 60px;
+            }
+            .dev-card h3 {
+                font-size: 1em;
+            }
+            .dev-card p {
+                font-size: 0.8em;
+            }
+            .logo {
+                width: 80px;
+            }
+            .sidebar {
+                width: 100%;
+                float: none;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            nav a {
+                font-size: 0.8em;
+                margin: 0 3px;
+            }
+            .page-content {
+                padding: 8px;
+            }
+            .dev-card {
+                width: 100%;
+                max-width: 120px;
+                padding: 8px;
+            }
+            .dev-card img {
+                width: 50px;
+                height: 50px;
+            }
+            .dev-card h3 {
+                font-size: 0.9em;
+            }
+            .dev-card p {
+                font-size: 0.7em;
+            }
+            .logo {
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <h1 class='typing-effect'>Δ.DΣLTA CODE BRASIL</h1>
+        </div>
+    </header>
+    <nav>
+        <div class='container'>
+            <a href='#inicio'>Início</a>
+            <a href='#quem-somos'>Quem Somos?</a>
+            <a href='#quero-um-site'>Quero um Site</a>
+            <a href='#desenvolvedores'>Desenvolvedores</a>
+            <a href='#contato'>Contato</a>
+        </div>
+    </nav>
+    <div class='container main'>
+        <!-- Sidebar -->
+        <div class='sidebar'>
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href='https://www.hostinger.com.br'>Hospedagem de Sites</a></li>
+                <li><a href='https://github.com/DELTACodeBrasil'>Github</a></li>
+            </ul>
+        </div>
+        <!-- Página Início -->
+        <div class='page-content' id='inicio'>
+            <h2>Bem-vindo à Δ.DΣLTA CODE BRASIL</h2>
+            <p>Soluções digitais sob medida para o seu negócio.</p>
+            <p>A dependência externa em tecnologia não é apenas uma questão econômica — é uma questão de soberania. Cada circuito que compramos da China, cada sensor que importamos dos EUA, cada software que usamos sem compreender nos afasta da capacidade de pensar e produzir por conta própria.</p>
+            <p>Na Delta Code Brasil, acreditamos que o conhecimento técnico deve ser livre, nacional e compartilhado. Através de projetos de baixo custo, tutoriais completos e ideias acessíveis, buscamos fortalecer a "programação de garagem", o hackerismo criativo e a inovação genuinamente brasileira.</p>
+        </div>
+        <!-- Página Quem Somos -->
+        <div class='page-content' id='quem-somos' style='display: none;'>
+            <h2>Quem Somos?</h2>
+            <p>Somos uma iniciativa 100% nacional dedicada à criação de soluções digitais de alto desempenho. Atuamos com excelência no desenvolvimento de sites e sistemas, moldando cada projeto sob medida para refletir os valores, os objetivos e a identidade de nossos clientes.</p>
+            <p>Mais do que apenas construir páginas, transformamos ideias em plataformas sólidas, modernas e funcionais, com atenção especial à usabilidade, velocidade, design e tecnologia.</p>
+            <p>Trabalhamos com seriedade, transparência e compromisso — impulsionando pessoas, marcas e negócios por meio da web. Nossa missão é clara: usar a tecnologia do Brasil, para o Brasil, promovendo autonomia, criatividade e desenvolvimento digital com alma nacional.</p>
+        </div>
+       <!-- Página Quero um Site -->
+        <div class='page-content' id='quero-um-site' style='display: none;'>
+            <h2>Quero um Site</h2>
+            <p>Preencha o formulário abaixo para solicitar um site:</p>
+            <form id='form-quero-um-site'>
+                <input id='nome' placeholder='Seu Nome' required='true' type='text'/>
+                <input id='email' placeholder='Seu E-mail' required='true' type='email'/>
+                <textarea id='mensagem' placeholder='Descreva seu projeto' required='true'></textarea>
+                <button type='submit'>Enviar</button>
+            </form>
+            
+            <center><h3>Orçamentos</h3></center>
+            
+            <p>Oferecemos opções claras e acessíveis para o seu projeto, com transparência total no custo. Você pode escolher entre pacotes prontos ou orçamento por linha de código.</p>
+            
+            <p><strong>Pacotes Fixos:</strong></p>
+            <ul>
+                <li><strong>Site Start</strong> - R$ 99,00<br/>
+                Uma página simples com design limpo e moderno.</li>
+                
+                <li><strong>Site Pro</strong> - R$ 249,00<br/>
+                Ideal para pequenas empresas, com várias seções, imagens e links.</li>
+                
+                <li><strong>Site Avançado</strong> - R$ 499,00<br/>
+                Inclui animações, formulários, integração com redes sociais e mais.</li>
+            </ul>
+            
+            <p><strong>Orçamento Personalizado por Código:</strong><br/>
+            Caso prefira algo totalmente personalizado, cobramos R$ 0,50 por linha de código, com relatório técnico incluso.</p>
+        </div>
+        <!-- Página Desenvolvedores -->
+        <div class='page-content' id='desenvolvedores' style='display: none;'>
+            <h2>Desenvolvedores</h2>
+            <div class='dev-container'>
+                <!-- Card do Rafael -->
+                <div class='dev-card'>
+                    <img alt='Rafael Souza de Melo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVa0qFolxg_tcsMEphaIkIpPmBqTawsnOBvkxGtwfqVT4R3NCZBGPodYBqq-RgZh7xSulB6SSnn1q1cLByU8-IXuPCl0clkMndiMNf-4IR17M4WpFepD4BVUH4LsTWYoRN19toExwhoW1tdaOzQLOKso5HqduloGKAUs1hZY3n8zBD3cm8POtVsW4K55E/s1600/Capturar.PNG'/>
+                    <h3>Rafael Souza de Melo</h3>
+                    <p>faelzinkkbr@gmail.com</p>
+                </div>
+                <!-- Card do Arthur -->
+                <div class='dev-card'>
+                    <img alt='Arthur Oliveiro Ribeiro de Souza' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlz8GV84-YZsdkCrZVSkTYE_xIZlGG8mG5E-CfSDSFTwQyzwkCraFFCCkthW_HjWwKkRJKk5gLeBvJOed2n7NbjPRAnUQYtCg1xoEG_b0ULDDGrtbuX4paR8hPeCUfW0kWzQX6_XMKVQD1gWfKs2CPrLUlwrxrPKGl5fZR3ARhrg28JpTKT9Ndy-NCvnY/s1600/Capturar.PNG'/>
+                    <h3>Arthur Oliveiro Ribeiro de Souza</h3>
+                    <p>arthuroliveiroribeirodesouza@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- Página Contato -->
+        <div class='page-content' id='contato' style='display: none;'>
+            <h2>Contato</h2>
+            <p>Entre em contato conosco:</p>
+            <p>Email: deltacodebrasil@gmail.com</p>
+            <p>Telefone: (35) 998137022</p>
+        </div>
+    </div>
+    <footer>
+        <div class='container'>
+            <img alt='Logo da Empresa' class='logo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLZWENOXOoarJ5Pk0xLf9SW9wA6DiIfJ2_cZuekSzW06kRqyOszqKNiMBkVtBSMnD4m_YJU_m9oaMpqM8gbmbkErxr9D40KBDlDQb0_YK078SyGEFbXXTI7QdDmxBwjp5ADQ2jpcZGweZzEmE3aVYC0-qBSAf4-mb1GXYvYYBS2gALoSYkWZOdWEI8TZM/s1600/%CE%94.D%CE%A3LTA%20Code.png'/>
+            <p>© 2025 Δ.DΣLTA CODE BRASIL - Todos os direitos reservados.</p>
+            <!-- Botões de Redes Sociais -->
+            <div class='social-links'>
+                <a href='https://wa.me/5535998137022?text=Quero%20um%20site!' target='_blank'>WhatsApp</a>
+                <a href='https://www.instagram.com/deltacodebrasil/' target='_blank'>Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'></script>
+    <script>
+        // Inicialize o EmailJS com seu User ID
+        (function() {
+            emailjs.init("FkQAo47DzCrJ1czhM"); // Substitua pelo seu User ID
+        })();
+
+        // Script para alternar entre as páginas
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('href').substring(1); // Remove o #
+                document.querySelectorAll('.page-content').forEach(page => {
+                    page.style.display = 'none'; // Oculta todas as páginas
+                });
+                document.getElementById(target).style.display = 'block'; // Mostra a página clicada
+            });
+        });
+
+        // Mostra a página Início por padrão
+        document.getElementById('inicio').style.display = 'block';
+
+        // Envio do formulário com EmailJS
+        document.getElementById('form-quero-um-site').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Captura os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // Envia o e-mail usando o EmailJS
+            emailjs.send("service_3rxtunp", "template_1gp2fa9", {
+                nome: nome,
+                email: email,
+                mensagem: mensagem
+            })
+            .then(function(response) {
+                alert('E-mail enviado com sucesso!');
+                document.getElementById('form-quero-um-site').reset(); // Limpa o formulário
+            }, function(error) {
+                alert('Erro ao enviar o e-mail. Tente novamente.');
+            });
+        });
+    </script>
+</body>
+</html>
